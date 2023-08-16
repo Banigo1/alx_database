@@ -13,7 +13,7 @@ INSERT INTO second_table (id, name, score) VALUES
 (3, 'Bob', 14), 
 (4, 'George', 8);
 
-FROM second_table SELECT (id, name, score)
+FROM second_table (id, name, score)
 
 UNION ALL
 SELECT 11, 'A', 12
