@@ -1,33 +1,18 @@
 /*9. Full creation*/
 
--- Get the database name from the command line argument
-database_name=$1
-
--- Connect to the MySQL server
-mysql -u Precious Banigo -p
-
--- Check if the table second_table already exists
-if [ -e "$database_name"."second_table" ]; then
-  echo "Table second_table already exists";
-  exit;
-fi
-
--- Create the table second_table
-
-CREATE TABLE second_table (
+-- Create the table if it doesn't exist
+CREATE TABLE IF NOT EXISTS hbtn_0c_0.second_table (
     id INT PRIMARY KEY,
-    name VARCHAR(255),
+    name VARCHAR(256),
     score INT
-
 );
 
--- Insert multiple rows in the second_table table
-insert into $database_name."second_table" 
-(id, name, score) values 
-(1, "John", 10), 
-(2, "Alex", 3), 
-(3, "Bob", 14), 
-(4, "George", 8);
+-- Insert rows into the table
+INSERT INTO hbtn_0c_0.second_table 
+    (id, name, score) VALUES
+    (1, 'John', 10),
+    (2, 'Alex', 3),
+    (3, 'Bob', 14),
+    (4, 'George', 8);
 
-);
 
