@@ -12,3 +12,14 @@ INSERT INTO second_table (id, name, score) VALUES
 (2, 'Alex', 3), 
 (3, 'Bob', 14), 
 (4, 'George', 8);
+
+FROM second_table SELECT (id, name, score)
+
+UNION ALL
+SELECT 11, 'A', 12
+UNION ALL
+SELECT 12, 'B', 12
+UNION ALL
+SELECT 13, 'C', 12
+UNION ALL
+SELECT 14, 'D', 12;
