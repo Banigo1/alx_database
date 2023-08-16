@@ -1,2 +1,2 @@
 <!--alx_database-->
-This is MySQL. All MySQL Projects will be here
+You can find all MySQL Projects here
