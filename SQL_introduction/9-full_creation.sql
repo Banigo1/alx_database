@@ -22,9 +22,10 @@ create table if not exists $database_name."second_table"
 );
 
 CREATE TABLE second_table (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(255) NOT NULL,
-  score INT NOT NULL
+    id INT PRIMARY KEY,
+    name VARCHAR(255),
+    score INT
+
 );
 
 -- Insert multiple rows in the second_table table
@@ -35,4 +36,5 @@ insert into $database_name."second_table"
 (3, "Bob", 14), 
 (4, "George", 8);
 
+);
 
