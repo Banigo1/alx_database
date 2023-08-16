@@ -13,13 +13,6 @@ if [ -e "$database_name"."second_table" ]; then
 fi
 
 -- Create the table second_table
-create table if not exists $database_name."second_table" 
-(
-  id int not null auto_increment,
-  name varchar(256) not null,
-  score int not null,
-  primary key (id)
-);
 
 CREATE TABLE second_table (
     id INT PRIMARY KEY,
