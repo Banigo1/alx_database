@@ -4,7 +4,7 @@
 database_name=$1
 
 -- Connect to the MySQL server
-mysql -u root -p
+mysql -u Precious Banigo -p
 
 -- Check if the table second_table already exists
 if [ -e "$database_name"."second_table" ]; then
