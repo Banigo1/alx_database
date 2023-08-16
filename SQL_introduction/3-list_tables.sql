@@ -1,11 +1,17 @@
 /*3. List tables*/
 
--- Get the database name from the command line argument
-database_name=mysql
+-- Check if the database name is provided as an argument
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 <database_name>"
+    exit 1
+fi
 
--- Connect to the MySQL server
-mysql -u root -p
+-- Store the provided database name in a variable
+db_name=$1
 
+-- Use the mysql command to list all tables in the specified database
+mysql -u Precious Banigo -p -e "USE $db_name; 
 
 -- List all the tables in the database
+
 SHOW TABLES;
