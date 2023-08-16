@@ -1,26 +1,12 @@
 -- 5. Full description
 
--- Get the database name from the command line argument
-database_name=$1
-
--- Connect to the MySQL server
-mysql -u root -p
-
--- Switch to the specified database
-use $database_name;
-
--- Get the create table statement for the first_table table
-create_table_statement=$
-(
-  SELECT
-    create_table_statement
-  FROM
-    information_schema.tables
-  WHERE
-    table_name = 'first_table'
-  AND
-    database_name = '$database_name'
-);
-
--- Print the create table statement
-echo $create_table_statement;
+SELECT
+    COLUMN_NAME,
+    COLUMN_TYPE,
+    IS_NULLABLE,
+    COLUMN_DEFAULT
+FROM
+    INFORMATION_SCHEMA.COLUMNS
+WHERE
+    TABLE_SCHEMA = 'hbtn_0c_0'
+    AND TABLE_NAME = 'first_table';
