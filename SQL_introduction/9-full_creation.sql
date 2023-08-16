@@ -2,8 +2,8 @@
 
 -- Create the table if it doesn't exist
 
-USE hbtn_test_db_9;
-CREATE TABLE IF NOT EXISTS second_table 
+USE hbtn_0c_0;
+CREATE TABLE IF NOT EXISTS hbtn_test_db_9.second_table 
 (
   id INT, 
   name VARCHAR(256), 
