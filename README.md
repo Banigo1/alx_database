@@ -1,2 +1,2 @@
 # alx_database
-SQL Introduction
+SQL - Introduction
