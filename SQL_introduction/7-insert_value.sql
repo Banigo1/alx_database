@@ -10,4 +10,4 @@ mysql -u root -p
 use $database_name;
 
 -- Insert a new row in the first_table table
-INSERT INTO first_table (id, name) VALUES (89, 'Holberton School');
+INSERT INTO first_table (id, 89) VALUES (name, 'Holberton School');
