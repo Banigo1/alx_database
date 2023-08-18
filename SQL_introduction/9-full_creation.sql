@@ -1,4 +1,7 @@
+-- Task 9. Full creation
+
 -- Create the table if it doesn't exist
+
 CREATE TABLE IF NOT EXISTS second_table 
 (
   id INT, 
