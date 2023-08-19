@@ -1,4 +1,6 @@
 -- create the mysql server user_0d_1
-CREATE USER IF NOT EXISTS 'user_0d_1'@'localhost' IDENTIFIED BY 'user_0d_1_pwd';
-GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@'localhost' WITH GRANT OPTION;
-FLUSH PRIVILEGES;
+CREATE USER IF NOT EXISTS 'user_0d_1'@'localhost' 
+GRANT SELECT ON hbtn_0d_2.* TO 'user_0d_2'@'localhost'
+IDENTIFIED BY 'user_0d_1_pwd';
+
+
