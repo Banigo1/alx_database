@@ -1,4 +1,4 @@
-# SQL - Introduction | # Database Management Repository
+# SQL - Introduction | Database Management Repository
 
 # Welcome
 
